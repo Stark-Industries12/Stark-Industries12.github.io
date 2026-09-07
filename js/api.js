@@ -52,6 +52,9 @@ window.API = (function () {
       return { mode, posthogKey: cfg.posthogKey, posthogHost: cfg.posthogHost };
     })
     .catch(() => {
+      // The 404 this logs is expected on GitHub Pages: it is how we detect
+      // that there is no backend and switch to in-browser bookings.
+      console.info('[api] No backend found - running in static demo mode.');
       mode = 'static';
       const cfg = window.ABC_CONFIG || {};
       return { mode, posthogKey: cfg.posthogKey || '', posthogHost: cfg.posthogHost || 'https://us.i.posthog.com' };
