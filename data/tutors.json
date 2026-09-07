@@ -1,0 +1,80 @@
+[
+  {
+    "id": "maya-ruiz",
+    "name": "Maya Ruiz",
+    "title": "Math Tutor",
+    "subjects": ["Algebra", "Geometry", "Pre-Calculus"],
+    "gradeLabel": "Grades 6-12",
+    "gradeMin": 6,
+    "gradeMax": 12,
+    "rate": 45,
+    "color": "#f6b352",
+    "bio": "Ten years helping middle and high schoolers stop dreading math. Patient, lots of worked examples, and a weekly recap emailed to parents.",
+    "availability": { "1": ["15:00", "16:00", "17:00"], "3": ["15:00", "16:00"], "5": ["14:00", "15:00", "16:00"] }
+  },
+  {
+    "id": "daniel-okoye",
+    "name": "Daniel Okoye",
+    "title": "Reading & Writing Tutor",
+    "subjects": ["Reading", "Writing", "English"],
+    "gradeLabel": "Grades 2-8",
+    "gradeMin": 2,
+    "gradeMax": 8,
+    "rate": 40,
+    "color": "#7bb7a3",
+    "bio": "Former elementary teacher. Builds confidence with reluctant readers and makes essay structure feel simple.",
+    "availability": { "2": ["16:00", "17:00", "18:00"], "4": ["16:00", "17:00"], "6": ["10:00", "11:00"] }
+  },
+  {
+    "id": "priya-shah",
+    "name": "Priya Shah",
+    "title": "Science Tutor",
+    "subjects": ["Biology", "Chemistry", "General Science"],
+    "gradeLabel": "Grades 7-12",
+    "gradeMin": 7,
+    "gradeMax": 12,
+    "rate": 50,
+    "color": "#8fa9dd",
+    "bio": "Biology degree and a lab-first approach. Great with students prepping for end-of-year exams.",
+    "availability": { "1": ["17:00", "18:00"], "2": ["15:00", "16:00"], "4": ["15:00", "16:00", "17:00"] }
+  },
+  {
+    "id": "tom-becker",
+    "name": "Tom Becker",
+    "title": "Math & Test Prep Tutor",
+    "subjects": ["Algebra", "Statistics", "SAT Math"],
+    "gradeLabel": "Grades 9-12",
+    "gradeMin": 9,
+    "gradeMax": 12,
+    "rate": 55,
+    "color": "#e08f7d",
+    "bio": "Focused, no-nonsense sessions for older students. Tracks practice-test scores week to week.",
+    "availability": { "3": ["17:00", "18:00", "19:00"], "5": ["17:00", "18:00"], "6": ["11:00", "12:00"] }
+  },
+  {
+    "id": "elena-fournier",
+    "name": "Elena Fournier",
+    "title": "Elementary Tutor",
+    "subjects": ["Reading", "Math", "Homework Help"],
+    "gradeLabel": "Grades K-5",
+    "gradeMin": 0,
+    "gradeMax": 5,
+    "rate": 38,
+    "color": "#c9a0d0",
+    "bio": "Warm and playful with the youngest students. Sessions mix games, reading aloud, and short practice sets.",
+    "availability": { "2": ["14:00", "15:00"], "4": ["14:00", "15:00"], "6": ["09:00", "10:00"] }
+  },
+  {
+    "id": "sam-whitfield",
+    "name": "Sam Whitfield",
+    "title": "Spanish & Study Skills Tutor",
+    "subjects": ["Spanish", "Study Skills"],
+    "gradeLabel": "Grades 6-12",
+    "gradeMin": 6,
+    "gradeMax": 12,
+    "rate": 42,
+    "color": "#9dbf72",
+    "bio": "Conversational Spanish plus the organizational habits that keep grades from slipping.",
+    "availability": { "1": ["16:00", "17:00"], "3": ["16:00", "17:00", "18:00"], "5": ["15:00", "16:00"] }
+  }
+]

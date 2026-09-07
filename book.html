@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Book a session - ABC Tutoring</title>
+<meta name="description" content="Choose a tutor, pick an open hour, and book a one-hour tutoring session with ABC Tutoring.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><text y='26' font-size='26'>&#128218;</text></svg>">
+<link rel="stylesheet" href="/css/styles.css">
+<script src="/js/config.js"></script>
+<script src="/js/schedule.js"></script>
+<script src="/js/api.js"></script>
+<script src="/js/analytics.js"></script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="/"><span class="brand-mark">ABC</span> ABC Tutoring</a>
+    <nav class="nav">
+      <a href="/">Home</a>
+      <a href="/tutors.html">Our tutors</a>
+      <a href="/book.html" class="active">Book a session</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap" style="padding-top:36px">
+  <div class="section-head">
+    <h1>Book a session</h1>
+    <p>Sessions are one hour. Times that are already taken won't show as available.</p>
+  </div>
+
+  <div class="steps" id="steps">
+    <span class="step current" data-step="1"><span class="dot">1</span> Choose a tutor</span>
+    <span class="sep"></span>
+    <span class="step" data-step="2"><span class="dot">2</span> Pick a time</span>
+    <span class="sep"></span>
+    <span class="step" data-step="3"><span class="dot">3</span> Your details</span>
+  </div>
+
+  <div class="book-layout">
+    <div>
+      <section class="pane" style="margin-bottom:24px">
+        <div class="field" style="margin-bottom:18px">
+          <label for="tutor">Tutor</label>
+          <select id="tutor" style="min-width:280px"><option value="">Loading tutors...</option></select>
+        </div>
+
+        <div id="calendar-area" hidden>
+          <div class="cal-head">
+            <h3 id="cal-title">Month</h3>
+            <div class="cal-nav">
+              <button type="button" id="prev" aria-label="Previous month">&#8249;</button>
+              <button type="button" id="next" aria-label="Next month">&#8250;</button>
+            </div>
+          </div>
+          <div class="calendar" id="calendar"></div>
+
+          <div class="times" id="times">
+            <h3 id="times-title">Pick a day to see open hours</h3>
+            <div class="time-list" id="time-list"></div>
+            <p class="hint" id="times-hint">Green days have open hours in the next three weeks.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="pane" id="form-pane" hidden>
+        <h3>Your details</h3>
+        <div class="errors" id="errors" hidden></div>
+        <form id="booking-form" novalidate>
+          <div class="form-grid">
+            <div class="field">
+              <label for="parentName">Parent / guardian name</label>
+              <input id="parentName" name="parentName" autocomplete="name" required>
+            </div>
+            <div class="field">
+              <label for="parentEmail">Email</label>
+              <input id="parentEmail" name="parentEmail" type="email" autocomplete="email" required>
+            </div>
+            <div class="field">
+              <label for="studentFirstName">Student's first name</label>
+              <input id="studentFirstName" name="studentFirstName" required>
+            </div>
+            <div class="field">
+              <label for="studentGrade">Student's grade</label>
+              <select id="studentGrade" name="studentGrade" required>
+                <option value="">Choose a grade</option>
+                <option value="K">Kindergarten</option>
+              </select>
+            </div>
+            <div class="field full">
+              <label for="subject">Subject they need help with</label>
+              <select id="subject" name="subject" required><option value="">Choose a subject</option></select>
+            </div>
+          </div>
+          <p style="margin:18px 0 0">
+            <button class="btn btn-primary" id="submit" type="submit">Confirm booking</button>
+          </p>
+          <p class="hint" style="margin-top:10px">No payment is taken online. You'll get a confirmation email right away.</p>
+        </form>
+      </section>
+    </div>
+
+    <aside class="pane" id="summary">
+      <h3>Your session</h3>
+      <div id="summary-body"><p class="hint">Choose a tutor to get started.</p></div>
+      <div class="summary-note">One-hour session &middot; no online payment &middot; free to reschedule by email.</div>
+    </aside>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span>ABC Tutoring &middot; hello@abctutoring.example &middot; (555) 014-2200</span>
+    <span>Weekdays after school &amp; Saturday mornings</span>
+  </div>
+</footer>
+
+<script src="/js/ui.js"></script>
+<script src="/js/book.js"></script>
+</body>
+</html>

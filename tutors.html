@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Our tutors - ABC Tutoring</title>
+<meta name="description" content="Browse ABC Tutoring's tutors by subject and grade level. See photos, rates and weekly availability.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><text y='26' font-size='26'>&#128218;</text></svg>">
+<link rel="stylesheet" href="/css/styles.css">
+<script src="/js/config.js"></script>
+<script src="/js/schedule.js"></script>
+<script src="/js/api.js"></script>
+<script src="/js/analytics.js"></script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="/"><span class="brand-mark">ABC</span> ABC Tutoring</a>
+    <nav class="nav">
+      <a href="/">Home</a>
+      <a href="/tutors.html" class="active">Our tutors</a>
+      <a href="/book.html">Book a session</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap" style="padding-top:40px">
+  <div class="section-head">
+    <h1>Our tutors</h1>
+    <p>Every tutor sets their own hours. Filter by what your student needs.</p>
+  </div>
+
+  <div class="filters">
+    <div class="field">
+      <label for="subject">Subject</label>
+      <select id="subject"><option value="">Any subject</option></select>
+    </div>
+    <div class="field">
+      <label for="grade">Student grade</label>
+      <select id="grade">
+        <option value="">Any grade</option>
+        <option value="K">Kindergarten</option>
+      </select>
+    </div>
+    <button class="btn btn-ghost" id="clear" type="button">Clear</button>
+    <span class="filter-count" id="count"></span>
+  </div>
+
+  <div class="tutor-grid" id="list"><p class="loading">Loading tutors...</p></div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span>ABC Tutoring &middot; hello@abctutoring.example &middot; (555) 014-2200</span>
+    <span>Weekdays after school &amp; Saturday mornings</span>
+  </div>
+</footer>
+
+<script src="/js/ui.js"></script>
+<script src="/js/tutors.js"></script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+{
+  "name": "abc-tutoring",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Prototype website for ABC Tutoring: tutor listings, one-hour session booking, and PostHog analytics.",
+  "scripts": {
+    "start": "node --env-file-if-exists=.env server.js",
+    "simulate": "node --env-file-if-exists=.env scripts/simulate-traffic.js",
+    "reset": "node -e \"require('fs').writeFileSync('data/bookings.json','[]');require('fs').writeFileSync('data/notifications.log','')\""
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
