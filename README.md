@@ -7,6 +7,8 @@ tracked in PostHog.
 
 **Live demo:** https://stark-industries12.github.io
 
+**Customer presentation:** [presentation.pdf](presentation.pdf)
+
 No dependencies to install - it runs on plain Node (18+).
 
 ## Two ways it runs
